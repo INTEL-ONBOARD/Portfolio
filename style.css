@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+  
+
 /*Start Animations*/
 @-webkit-keyframes animatetop {
 	from {
@@ -48,8 +51,14 @@
 -- Start BackGround Animation 
 */
 
+.body{
+    font-family: "Roboto Mono", monospace;    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margim:0px;
+    padding:0px;
+  }
 
-    
 .carousel-item img {
     width: 5rem;
     height: 5rem;
@@ -71,7 +80,10 @@
     min-width: 20%; /* Adjust to show 5 items at a time */
     box-sizing: border-box;
 }
-
+.imgs{
+    min-width: 20%; /* Adjust to show 5 items at a time */
+    box-sizing: border-box;
+}
 
 .nav-bg {
     background-image: url('./images/bg.jpg');
@@ -80,7 +92,7 @@
 }
 
 .area {
-	background: #4e54c8;
+	background: transparent;
 	background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 	width: 100%;
 	height: 100vh;
@@ -103,7 +115,7 @@
 	list-style: none;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.39);
 	animation: animate 25s linear infinite;
 	bottom: -150px;
 }
@@ -199,3 +211,58 @@
 /*
 -- End BackGround Animation 
 */
+
+/* Keyframes for fade-in and slide-up animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation classes */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 1s ease-out 0.5s;
+}
+
+.animate-slide-up-delay {
+    animation: slideUp 1s ease-out 0.5s;
+}
+
+
+/* Add this in your CSS file or <style> tag */
+@keyframes count-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.count-up {
+    animation: count-up 1s ease-out;
+}
