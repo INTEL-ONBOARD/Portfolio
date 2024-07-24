@@ -48,6 +48,31 @@
 -- Start BackGround Animation 
 */
 
+
+    
+.carousel-item img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 20%; /* Adjust to show 5 items at a time */
+    box-sizing: border-box;
+}
+
+
 .nav-bg {
     background-image: url('./images/bg.jpg');
     background-size:cover;
