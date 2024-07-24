@@ -47,6 +47,13 @@
 /*
 -- Start BackGround Animation 
 */
+
+.nav-bg {
+    background-image: url('./images/bg.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
 .area {
 	background: #4e54c8;
 	background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
